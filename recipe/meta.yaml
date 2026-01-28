@@ -30,7 +30,7 @@ requirements:
     - sqlglot
     - chardet
     - python >={{ python_min }}
-    - panel >=1.8.6
+    - panel >=1.8.7
     - hvplot
     - holoviews >=1.17.0
     - pandas
