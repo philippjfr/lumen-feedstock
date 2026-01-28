@@ -50,7 +50,6 @@ requirements:
     - pydantic >=2.8.0
     - pydantic-extra-types
     - semchunk
-    - sqlglot
     - sqlglotrs
     - tabulate
     - tiktoken
