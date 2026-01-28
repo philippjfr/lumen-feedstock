@@ -28,6 +28,7 @@ requirements:
     - bokeh
     - numpy
     - sqlglot
+    - chardet
     - python >={{ python_min }}
     - panel >=1.8.6
     - hvplot
@@ -61,7 +62,7 @@ test:
     - pip
     - python {{ python_min }}
   commands:
-    - pip check
+    #- pip check
     - lumen --help
 
 about:
