@@ -1,5 +1,5 @@
 {% set name = "lumen" %}
-{% set version = "0.10.1" %}
+{% set version = "1.0.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4ab077bf87357649c3b75a1776ab9655b246b766efddf96e5dbefaab3781b568
+  sha256: bfcd83ecf4b78887b027598a86ddd864e81df8da703f0ad2e8b8fabed15c82a3
 
 build:
   noarch: python
@@ -29,7 +29,7 @@ requirements:
     - numpy
     - sqlglot
     - python >={{ python_min }}
-    - panel >=1.6.3
+    - panel >=1.8.6
     - hvplot
     - holoviews >=1.17.0
     - pandas
@@ -37,7 +37,23 @@ requirements:
     - intake <2
     - jinja2 >3.0
     - pyyaml
-    - param >=1.9.0
+    - param >=2.2.1
+    - duckdb >=1.2.0
+    - griffe
+    - instructor >=1.6.4
+    - markitdown
+    - nbformat
+    - panel-graphic-walker >=0.6.4
+    - panel-material-ui >=0.8.1
+    - panel-splitjs
+    - pyarrow
+    - pydantic >=2.8.0
+    - pydantic-extra-types
+    - semchunk
+    - sqlglot
+    - sqlglotrs
+    - tabulate
+    - tiktoken
 
 test:
   imports:
